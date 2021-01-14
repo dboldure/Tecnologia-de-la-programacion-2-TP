@@ -1,0 +1,45 @@
+{
+  "bodies": [
+ 
+    { 
+      "type" : "basic",
+      "data" : {
+	             "id" : "b1",
+     	         "pos"  : [0,  -100],
+     	         "vel"  : [0, 10],
+     			 "mass" : 150
+     		   }		   
+    },
+    
+    { 
+      "type" : "rocket",
+      "data" : {
+	             "id" : "b2",
+     	         "pos"  : [100, -100],
+     	         "vel"  : [0, 10],
+     			 "mass" : 150,
+     			 "fuel" : [
+     			 		{"type" : "fuel",
+     			 		"data" : {
+     			 				"id" : "fuel1",
+     			 				"pos" : [100, -100],
+     			 				 "vel"  : [0, 10],
+     			 				 "mass" : 2,
+     			 				 "freq" : 5,
+     			 				 "factor" : 1,
+     			 				 "efficiency" : 1000 } },
+     			 		{"type" : "fuel",
+     			 		"data" : {
+     			 				"id" : "fuel2",
+     			 				"pos" : [100, -100],
+     			 				 "vel"  : [0, 10],
+     			 				 "mass" : 1,
+     			 				 "freq" : 2,
+     			 				 "factor" : 1,
+     			 				 "efficiency" : 2 } }  ],
+     			 	"program" : [
+     			 			[10, 2, "fuel1"]]
+     		   }		   
+    }
+ ]
+}
